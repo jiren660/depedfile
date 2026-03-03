@@ -31,3 +31,4 @@ Route::get('/login', function() {
     return redirect('/');
 });
 
+Route::post('/logout', [AuthController::class, 'logout'])->name('logout');

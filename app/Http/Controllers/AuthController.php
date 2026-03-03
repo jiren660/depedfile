@@ -31,4 +31,15 @@ class AuthController extends Controller
 
         return back()->with('error', 'Email not found or account not approved.');
     }
+
+    // Handle logout
+    public function logout(Request $request)
+    {
+        Auth::logout();
+
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+
+        return redirect('/'); // Babalik sa login page
+    }
 }
