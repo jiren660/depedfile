@@ -68,7 +68,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
                         </svg>
                     </div>
-                    <h2 class="text-2xl font-bold text-slate-800 tracking-tight mb-2">Request Sent!</h2>
+                    <h2 class="text-2xl font-bold text-slate-800 tracking-tight mb-2">Request Submitted!</h2>
                     <p class="text-slate-600 text-sm leading-relaxed mb-6">
                         Your request has been sent. Please wait for the <span class="font-bold text-black">Administrator's approval</span> before you can access the system.
                     </p>
