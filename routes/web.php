@@ -2,12 +2,13 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\DashboardController;
 
 // Login and Landing Page
 Route::get('/', [AuthController::class, 'showLoginForm'])->name('login');
 
 // Process Login Attempt
-Route::post('/login', [AuthController::class, 'login']);
+Route::post('/', [AuthController::class, 'login']);
 
 // Display Registration Page
 Route::get('/register', function () {
@@ -29,3 +30,4 @@ Route::get('/dashboard', function() {
 Route::get('/login', function() {
     return redirect('/');
 });
+
