@@ -32,3 +32,8 @@ Route::get('/login', function() {
 });
 
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+
+// Idagdag mo ito sa listahan ng routes mo:
+Route::get('/inventory-setup', function () {
+    return view('inventory-setup'); // Ito dapat ang pangalan ng blade file mo
+})->name('inventory.setup')->middleware('auth');
